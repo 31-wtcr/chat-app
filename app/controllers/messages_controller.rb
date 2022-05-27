@@ -13,7 +13,6 @@ class MessagesController < ApplicationController
     else
       render :index
       @messages = @room.messages.includes(:user)
-
     end
   end
 
